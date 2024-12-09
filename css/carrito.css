@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.empty-cart-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cart-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffcc00; /* Tono amarillo */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    background-color: #ffcc00; /* Botón en tono amarillo */
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #e6b800; /* Un poco más oscuro en hover */
+}

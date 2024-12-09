@@ -1,0 +1,325 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px;
+}
+
+.header-bar {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.header-bar span {
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Productos */
+.product-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.product-section h2 span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards */
+.product-card {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-card:hover img {
+    opacity: 1;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn.edit {
+    background-color: #ffc107;
+}
+
+.btn.delete {
+    background-color: #dc3545;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+    padding: 10px 20px;
+}
+
+.header-bar {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li {
+    position: relative;
+}
+
+nav ul.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Productos */
+.product-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.product-section h2 span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards */
+.product-card {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Efecto de hover */
+.product-card:hover img {
+    opacity: 1;
+}
+
+/* Efecto para agrandar todas las tarjetas */
+.product-card:hover ~ .product-card,
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+nav ul.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+nav ul.menu .dropdown-menu {
+    display: none;
+}
+/* Menú principal */
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li {
+    position: relative;
+}
+
+nav ul.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Menú desplegable */
+nav ul.menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Se muestra debajo del enlace padre */
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul.menu .dropdown-menu li {
+    padding: 5px 20px;
+}
+
+nav ul.menu .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    display: block;
+}
+
+nav ul.menu .dropdown-menu li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Mostrar menú al pasar el mouse */
+nav ul.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.cart-icon {
+    width: 22px; /* Ajusta el ancho de la imagen */
+    height: 22px; /* Ajusta el alto de la imagen */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+    cursor: pointer; /* Mantén el cursor en forma de puntero si es interactivo */
+}
